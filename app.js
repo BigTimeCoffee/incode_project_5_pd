@@ -7,6 +7,8 @@ const usersRouter = require('./routes/users')
 const port = 4000
 const fetch = require('node-fetch')
 
+// Select count(rating) as rating , avg(show_id) as average from rating where show_id=1;
+
 require('dotenv').config()
 
 const mysql = require('mysql2')

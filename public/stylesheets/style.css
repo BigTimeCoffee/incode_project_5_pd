@@ -1,9 +1,9 @@
-/* body {
-    font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
-} */
+body {
+    background-color: #b3d9ff;
+}
 
 a {
-    color: #00b7ff;
+    text-decoration: none;
 }
 
 .tv-shows {
