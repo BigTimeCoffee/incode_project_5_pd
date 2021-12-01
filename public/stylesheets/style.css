@@ -1,8 +1,35 @@
-body {
-  padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
-}
+/* body {
+    font: 14px 'Lucida Grande', Helvetica, Arial, sans-serif;
+} */
 
 a {
-  color: #00B7FF;
+    color: #00b7ff;
+}
+
+.tv-shows {
+    display: inline-block;
+    margin: 5%;
+}
+
+.content-area {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #66ff66;
+    padding: 2%;
+    margin: 2%;
+    border-radius: 5px;
+    font-family: 'Play', sans-serif;
+    font-size: 1.1em;
+}
+
+.api-area {
+    background-color: #66ff66;
+    padding: 2%;
+    margin: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    border-radius: 5px;
+    font-family: 'Play', sans-serif;
+    font-size: 1.1em;
 }
