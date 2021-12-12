@@ -1,5 +1,5 @@
 body {
-    background-color: #b3d9ff;
+    background-color: #ccffff;
 }
 
 a {
@@ -15,16 +15,18 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #66ff66;
+    background-color: #ffe680;
     padding: 2%;
     margin: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
     border-radius: 5px;
     font-family: 'Play', sans-serif;
     font-size: 1.1em;
 }
 
 .api-area {
-    background-color: #66ff66;
+    background-color: #ffe680;
     padding: 2%;
     margin: 2%;
     margin-left: 10%;

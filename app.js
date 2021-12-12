@@ -4,10 +4,10 @@ const path = require('path')
 const cookieParser = require('cookie-parser')
 const indexRouter = require('./routes/index')
 const usersRouter = require('./routes/users')
-const port = 4000
+const port = 1000
 const fetch = require('node-fetch')
 
-// Select count(rating) as rating , avg(show_id) as average from rating where show_id=1;
+//
 
 require('dotenv').config()
 
@@ -18,7 +18,7 @@ const connection = mysql.createConnection({
     user: 'root',
     password: 'password',
     database: 'incode_project_5_db',
-    port: 3306,
+    // port: 3306,
 })
 
 connection.connect(function (err) {

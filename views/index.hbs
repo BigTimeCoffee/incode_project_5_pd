@@ -3,11 +3,17 @@
 {{#each shows}}
     <div class='tv-shows'>
         <div>
-            <a href='#'>{{this.name}}</a>
+            <a href='/show/{{this.id}}'>{{this.name}}</a>
         </div>
 
         <div>
-            <a href='#'><img src='{{this.image.medium}}' alt='' /></a>
+            <a href='/show/{{this.id}}'><img
+                    src='{{this.image.medium}}'
+                    alt='Show Poster'
+                /></a>
+        </div>
+        <div id='showId-{{this.id}}'>
+
         </div>
     </div>
 {{/each}}

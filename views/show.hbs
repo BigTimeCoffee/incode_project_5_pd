@@ -1,0 +1,20 @@
+<p>{{show.name}}</p>
+<p><img src='{{show.image.medium}}' alt='Show poster' /></p>
+<p>{{show.premiered}}</p>
+<p>{{{show.summary}}}</p>
+<p>{{show.genres}}</p>
+
+<div>
+    <form>
+        <input type='hidden' value='{{show.id}}' name='showId' id='showId' />
+        <input type='text' name='rating' id='rating' />
+        <button id='rateShow'>
+            Rate Show
+        </button>
+    </form>
+
+</div>
+
+<div id='ratingResults'>
+
+</div>
