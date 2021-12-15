@@ -46,4 +46,20 @@ function getAverage(showId) {
     })
 }
 
-module.exports = { getAll, insertRating, getAverage }
+function getAverageAll(showIds) {
+    return new Promise((resolve, reject) => {
+        connection.query(
+            'Select tv_show_id as showId, count(rating) as numberOfVotes , avg(rating) as average from incode_project_5_db.ratings WHERE `tv_show_id` IN ? GROUP BY tv_show_id',
+            [[showIds]],
+            (err, result) => {
+                if (err) reject(err)
+                //console.log(result)
+                resolve(result)
+            }
+        )
+    })
+}
+
+// Select tv_show_id as showId, count(rating) as numberOfVotes , avg(rating) as average  from incode_project_5_db.ratings WHERE `tv_show_id` IN () GROUP BY tv_show_id;
+
+module.exports = { getAll, insertRating, getAverage, getAverageAll }

@@ -12,6 +12,10 @@ router.get('/', function (req, res) {
                 firstTwenty.push(shows[i])
                 //console.log('Show name:', shows[i].name)
             }
+            const showIds = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+            ratings.getAverageAll(showIds).then((groupedRatings) => {
+                console.log('these are the grouped ratings', groupedRatings)
+            })
             res.render('index', {
                 layout: 'layouts/index',
                 title: 'TV-API',
@@ -69,6 +73,14 @@ router.get('/login', (req, res) => {
 
 router.get('/signup', (req, res) => {
     res.render('signUp', { layout: 'layouts/signUp' })
+})
+
+router.post('/getAverageAll', (req, res) => {
+    const showIds = req.body.showIds
+    ratings.getAverageAll(showIds).then((groupedRatings) => {
+        console.log('these are the grouped ratings', groupedRatings)
+        res.json(groupedRatings)
+    })
 })
 
 module.exports = router
